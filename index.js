@@ -7,13 +7,13 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://127.0.0.1:8080", "https://muhammadumairkhan.vercel.app"],
+    origin: "*",
     methods: "*",
   })
 );
 app.use(express.json());
 
-app.use(router);
+app.use("/api/v1", router);
 
 const startServer = async () => {
   try {
