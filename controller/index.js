@@ -14,7 +14,8 @@ const getResume = async (req, res) => {
   //   res.status(500).send("Error fetching PDF");
   // }
   res.status(200).send({
-    data: "https://firebasestorage.googleapis.com/v0/b/portfolio-b576f.appspot.com/o/Resume.pdf?alt=media&token=46e487e3-8f0d-4323-a27a-c7a5f8be67f6",
+    pdf: "https://firebasestorage.googleapis.com/v0/b/portfolio-b576f.appspot.com/o/Resume.pdf?alt=media&token=46e487e3-8f0d-4323-a27a-c7a5f8be67f6",
+    jgp: "https://firebasestorage.googleapis.com/v0/b/portfolio-b576f.appspot.com/o/resume.jpg?alt=media&token=3b7a95bb-de85-42e7-b693-94b6313c7ff6",
   });
 };
 
