@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "express-async-handler": "^1.2.0",
     "mongodb": "^5.7.0",
     "mongoose": "^7.4.0"
   }

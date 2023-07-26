@@ -8,6 +8,7 @@ const Projects = new mongoose.Schema(
     url: { type: String, required: true },
     repository: { type: String, required: true },
     coverImageURL: { type: String, required: true },
+    date: { type: Date, required: true },
   },
   { collection: "projects" }
 );
