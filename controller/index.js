@@ -3,23 +3,9 @@ import ProjectsSchema from "../model/projectsModel.js";
 import asyncHandler from "express-async-handler";
 
 const getResume = async (req, res) => {
-  // try {
-  //   const pdfUrl =
-  //     "https://firebasestorage.googleapis.com/v0/b/portfolio-b576f.appspot.com/o/Umair_CV%20(1).pdf?alt=media&token=63a6b067-8ad1-41eb-9d1a-7ba1867fd9d9";
-  //   const pdfResponse = await fetch(pdfUrl);
-  //   const pdfBuffer = await pdfResponse.arrayBuffer();
-
-  //   res.set("Content-Type", "application/pdf");
-  //   res.set("Content-Disposition", 'inline; filename="Umair_CV.pdf"');
-  //   res.set("Access-Control-Allow-Origin", "*");
-  //   res.send(Buffer.from(pdfBuffer));
-  // } catch (error) {
-  //   console.error("Error fetching PDF:", error);
-  //   res.status(500).send("Error fetching PDF");
-  // }
   res.status(200).send({
-    pdf: "https://firebasestorage.googleapis.com/v0/b/portfolio-b576f.appspot.com/o/Resume.pdf?alt=media&token=46e487e3-8f0d-4323-a27a-c7a5f8be67f6",
-    jgp: "https://firebasestorage.googleapis.com/v0/b/portfolio-b576f.appspot.com/o/resume.jpg?alt=media&token=3b7a95bb-de85-42e7-b693-94b6313c7ff6",
+    pdf: "https://firebasestorage.googleapis.com/v0/b/portfolio-b576f.appspot.com/o/Resume.pdf?alt=media&token=8529f9ce-7069-4806-a9d8-131310d70533",
+    jgp: "https://firebasestorage.googleapis.com/v0/b/portfolio-b576f.appspot.com/o/Resume.jpg?alt=media&token=75b141b7-114b-4ace-be5f-2b47b534c9a0",
   });
 };
 
